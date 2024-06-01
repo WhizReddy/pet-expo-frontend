@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Expo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#dogs">Dogs</a></li>
+          <li><a href="#cats">Cats</a></li>
+          <li><a href="#birds">Birds</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="animal-gallery">
+        <h2>Animal Gallery</h2>
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="Search for an animal..."
+          oninput="searchAnimals()"
+        />
+        <div id="gallery"></div>
+      </section>
+    </main>
+
+    <div id="popup" class="popup" onclick="closePopupOutside(event)">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <div id="popup-details"></div>
+      </div>
+    </div>
+
+    <section id="about-us">
+      <h2>About Us</h2>
+      <p>
+        Welcome to Pet Expo! Explore various pets and find your perfect
+        companion.
+      </p>
+    </section>
+
+    <section id="contact-us">
+      <h2>Contact Us</h2>
+      <p>Email: contact@petexpo.com</p>
+    </section>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
